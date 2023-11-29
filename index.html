@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" ></script>
+  <title>Minha Página com JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Minha Página com JavaScript</h1>
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2>Seção 1</h2>
+      <p>Conteúdo da Seção 1</p>
+      <img src="https://via.placeholder.com/800x400" alt="Imagem Seção 1">
+    </section>
+
+    <section id="section2">
+      <h2>Seção 2</h2>
+      <p>Conteúdo da Seção 2</p>
+      <img src="https://via.placeholder.com/800x400" alt="Imagem Seção 2">
+    </section>
+
+    <section id="section3">
+      <h2>Seção 3</h2>
+      <p>Conteúdo da Seção 3</p>
+      <img src="https://via.placeholder.com/800x400" alt="Imagem Seção 3">
+    </section>
+
+    <section id="section4">
+      <h2>Seção 4</h2>
+      <p>Conteúdo da Seção 4</p>
+      <img src="https://via.placeholder.com/800x400" alt="Imagem Seção 4">
+    </section>
+  </main>
+
+  <footer>
+    <p>Rodapé da Página</p>
+  </footer>
+
+  <script>
+    // Funções JavaScript que foram documentadas anteriormente
+
+    // Exemplo de uso das funções para criar a estrutura da página
+    const header = criarElemento('header');
+    const h1 = criarElemento('h1');
+    definirConteudo(h1, 'Minha Página com JavaScript');
+    inserirAntes(h1, header);
+
+    const main = criarElemento('main');
+
+    const section1 = criarElemento('section');
+    const h2Sec1 = criarElemento('h2');
+    const pSec1 = criarElemento('p');
+    const imgSec1 = criarElemento('img');
+    definirConteudo(h2Sec1, 'Seção 1');
+    definirConteudo(pSec1, 'Conteúdo da Seção 1');
+    alterarAtributo(imgSec1, 'src', 'https://via.placeholder.com/800x400');
+    alterarAtributo(imgSec1, 'alt', 'Imagem Seção 1');
+    [h2Sec1, pSec1, imgSec1].forEach(elemento => inserirAntes(elemento, section1));
+
+    const section2 = criarElemento('section');
+    const h2Sec2 = criarElemento('h2');
+    const pSec2 = criarElemento('p');
+    const imgSec2 = criarElemento('img');
+    definirConteudo(h2Sec2, 'Seção 2');
+    definirConteudo(pSec2, 'Conteúdo da Seção 2');
+    alterarAtributo(imgSec2, 'src', 'https://via.placeholder.com/800x400');
+    alterarAtributo(imgSec2, 'alt', 'Imagem Seção 2');
+    [h2Sec2, pSec2, imgSec2].forEach(elemento => inserirAntes(elemento, section2));
+
+    const section3 = criarElemento('section');
+    const h2Sec3 = criarElemento('h2');
+    const pSec3 = criarElemento('p');
+    const imgSec3 = criarElemento('img');
+    definirConteudo(h2Sec3, 'Seção 3');
+    definirConteudo(pSec3, 'Conteúdo da Seção 3');
+    alterarAtributo(imgSec3, 'src', 'https://via.placeholder.com/800x400');
+    alterarAtributo(imgSec3, 'alt', 'Imagem Seção 3');
+    [h2Sec3, pSec3, imgSec3].forEach(elemento => inserirAntes(elemento, section3));
+
+    const section4 = criarElemento('section');
+    const h2Sec4 = criarElemento('h2');
+    const pSec4 = criarElemento('p');
+    const imgSec4 = criarElemento('img');
+    definirConteudo(h2Sec4, 'Seção 4');
+    definirConteudo(pSec4, 'Conteúdo da Seção 4');
+    alterarAtributo(imgSec4, 'src', 'https://via.placeholder.com/800x400');
+    alterarAtributo(imgSec4, 'alt', 'Imagem Seção 4');
+    [h2Sec4, pSec4, imgSec4].forEach(elemento => inserirAntes(elemento, section4));
+
+    const footer = criarElemento('footer');
+    const pFooter = criarElemento('p');
+    definirConteudo(pFooter, 'Rodapé da Página');
+    inserirAntes(pFooter, footer);
+  </script>
+
+</body>
+</html>
